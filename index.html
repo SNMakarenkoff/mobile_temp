@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+</head>
+<body>
+    <main>
+       <nav class="main-menu">
+                <ul>
+                    <li><i class="fas fa-arrow-left"></i></li>
+                    <li>pre-sales call summary</li>
+                    <li><i class="far fa-edit"></i></li>
+                </ul>
+            </nav>
+        <header class="headline">
+            
+            <img src="img/DUDE.png" alt="">
+            <p class="greeting">Julia, here's your call summary:</p>
+            <h1>Multiplatform managment app for Monica Salehi</h1>
+            <p class="time">10:00, 29-04 (monday)</p>
+        </header>
+        <section class="members">
+           <header>
+              <h2>Member selected</h2>
+               <a href="#"> See all<i class="fas fa-chevron-right"></i></a>
+           </header>
+           <div class="members_profile">
+               <div class="glide">
+                   <div class="glide__track" data-glide-el="track">
+                       <ul class="glide__slides">
+                          <li class="glide__slide">
+                              <div class="member man1">
+                                  
+                              </div>
+                          </li>
+                          <li class="glide__slide">
+                               <div class="member man2">
+                                  
+                              </div>
+                          </li>
+                          <li class="glide__slide">
+                               <div class="member man3">
+                                  
+                              </div>
+                          </li>
+                        </ul>
+                   </div>
+                </div>
+           </div>
+        </section>
+        <section class="sprint">
+            <header>
+                <h2>Sprint planned</h2>
+                <a href="#">Calendar<i class="fas fa-chevron-right"></i></a>
+            </header>
+            <section class="plans">
+                <div class="plans-glide">
+                   <div class="glide__track" data-glide-el="track">
+                       <ul class="glide__slides">
+                          <li class="glide__slide">
+                              <div class="plan">
+                                  <header>
+                                     <span class="mob13"><i class="fas fa-arrow-circle-up"></i>MOB-13</span>
+                                         <span class="todo">To Do</span>
+                                     
+                                  </header>
+                                  <h2>Ideation Phase</h2>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fuga quisquam suscipit esse alias quia molestiae dolorum.</p>
+                                  <footer>
+                                      <span><i class="fas fa-clock"></i>Update: Just now</span>
+                                      <span><i class="fas fa-comment"></i>No comments yet</span>
+                                  </footer>
+                              </div>
+                          </li>
+                          <li class="glide__slide">
+                               <div class="plan">
+                                  <header>
+                                     <span><i class="fas fa-arrow-circle-up"></i>MOB-13</span>
+                                         <span class="todo">To Do</span>
+                                     
+                                  
+                                  </header>
+                                  <h2>Ideation Phase</h2>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fuga quisquam suscipit esse alias quia molestiae dolorum.</p>
+                                  <footer>
+                                      <span><i class="fas fa-clock"></i>Update: Just now</span>
+                                      <span><i class="fas fa-comment"></i>No comments yet</span>
+                                  </footer>
+                              </div>
+                          </li>
+                          <li class="glide__slide">
+                               <div class="plan">
+                                  <header>
+                                     <span><i class="fas fa-arrow-circle-up"></i>MOB-13</span>
+                                         <span class="todo">To Do</span>
+                                     
+                                  </header>
+                                  <h2>Ideation Phase</h2>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fuga quisquam suscipit esse alias quia molestiae dolorum.</p>
+                                  <footer>
+                                      <span><i class="fas fa-clock"></i>Update: Just now</span>
+                                      <span><i class="fas fa-comment"></i>No comments yet</span>
+                                  </footer>
+                              </div>
+                          </li>
+                        </ul>
+                   </div>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                   </div>
+                </div>
+            </section>
+        </section>
+    </main>
+<script src="js/glide.min.js"></script>
+<script>
+    let glide = function () {
+        new Glide('.glide', {
+                    type: 'carousel',
+                    startAt: 0,
+                    perView: 3
+                  }).mount();
+    }
+    
+    let glide2 = function () {
+        new Glide('.plans-glide', {
+            type: 'carousel',
+                    startAt: 0,
+                    perView: 1.1
+        }).mount();
+    }
+    
+    glide();
+    glide2();
+    
+</script>
+</body>
+</html>
